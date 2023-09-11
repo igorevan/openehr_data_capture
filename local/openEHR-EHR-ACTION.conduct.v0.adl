@@ -1,0 +1,46 @@
+archetype (adl_version=1.4; uid=f254588e-bbd4-4b0a-a874-77b614b21d37)
+	openEHR-EHR-ACTION.conduct.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::pt-br]>
+
+description
+	original_author = <
+		["name"] = <"Igor Oliveira Vieira">
+		["organisation"] = <"Precision Data">
+		["email"] = <"igorevan@gmail.com">
+		["date"] = <"2023-09-11">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["pt-br"] = <
+			language = <[ISO_639-1::pt-br]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"72be9a2ab7b2cc7b834d6a404ce9ebc3">
+		["build_uid"] = <"766ffff1-1a29-3970-9878-4023d6334881">
+	>
+
+definition
+	ACTION[at0000] matches {*}    -- conduct
+
+ontology
+	term_definitions = <
+		["pt-br"] = <
+			items = <
+				["at0000"] = <
+					text = <"conduct">
+					description = <"conduct">
+				>
+			>
+		>
+	>
