@@ -26,20 +26,47 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"8e7c84a5cc238d20ff4a2f7088bc29bc">
+		["MD5-CAM-1.0.1"] = <"6124e884f35475a448f5f79f040b11b6">
 		["build_uid"] = <"766ffff1-1a29-3970-9878-4023d6334881">
 	>
 
 definition
-	ACTION[at0000] matches {*}    -- conduct
+	ACTION[at0000] matches {    -- Conduta
+		protocol matches {
+			ITEM_TREE[at0003] matches {*}    -- Item tree
+		}
+		description matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0005] occurrences matches {0..1} matches {    -- Descrição
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
 
 ontology
 	term_definitions = <
 		["pt-br"] = <
 			items = <
 				["at0000"] = <
-					text = <"conduct">
+					text = <"Conduta">
 					description = <"Conduta">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Descrição">
+					description = <"">
 				>
 			>
 		>
