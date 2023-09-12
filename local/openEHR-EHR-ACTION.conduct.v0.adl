@@ -9,10 +9,10 @@ language
 
 description
 	original_author = <
+		["date"] = <"2023-09-11">
 		["name"] = <"Igor Oliveira Vieira">
 		["organisation"] = <"Precision Data">
 		["email"] = <"igorevan@gmail.com">
-		["date"] = <"2023-09-11">
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"72be9a2ab7b2cc7b834d6a404ce9ebc3">
+		["MD5-CAM-1.0.1"] = <"8e7c84a5cc238d20ff4a2f7088bc29bc">
 		["build_uid"] = <"766ffff1-1a29-3970-9878-4023d6334881">
 	>
 
@@ -39,7 +39,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"conduct">
-					description = <"conduct">
+					description = <"Conduta">
 				>
 			>
 		>
