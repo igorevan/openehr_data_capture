@@ -1,0 +1,93 @@
+archetype (adl_version=1.4; uid=f6a99438-e879-442c-89c8-049fbbd75109)
+	openEHR-EHR-EVALUATION.conduta.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+	translations = <
+		["pt-br"] = <
+			language = <[ISO_639-1::pt-br]>
+			author = <
+			>
+		>
+	>
+
+description
+	original_author = <
+		["name"] = <"Igor Oliveira Vieira">
+		["organisation"] = <"Precision Data">
+		["email"] = <"igorevan@gmail.com">
+		["date"] = <"2023-09-15">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["pt-br"] = <
+			language = <[ISO_639-1::pt-br]>
+			copyright = <"© openEHR Foundation">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"596b6e82ccc151601985371fa9daecc2">
+		["build_uid"] = <"a2dc706d-f427-3761-beda-ae8cbadbba4d">
+	>
+
+definition
+	EVALUATION[at0000] matches {    -- Planning
+		data matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Planning
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Planning">
+					description = <"Conduta">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Planning">
+					description = <"">
+				>
+			>
+		>
+		["pt-br"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Planning (en)">
+					description = <"*Conduta (en)">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"*Planning (en)">
+					description = <"">
+				>
+			>
+		>
+	>
