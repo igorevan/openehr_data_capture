@@ -37,7 +37,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"596b6e82ccc151601985371fa9daecc2">
+		["MD5-CAM-1.0.1"] = <"ee7a2fd2ca3de770bce4fb8a1e7f6483">
 		["build_uid"] = <"a2dc706d-f427-3761-beda-ae8cbadbba4d">
 	>
 
@@ -77,7 +77,7 @@ ontology
 		["pt-br"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Planning (en)">
+					text = <"Conduta">
 					description = <"*Conduta (en)">
 				>
 				["at0001"] = <
@@ -85,7 +85,7 @@ ontology
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					text = <"*Planning (en)">
+					text = <"Conduta">
 					description = <"">
 				>
 			>
